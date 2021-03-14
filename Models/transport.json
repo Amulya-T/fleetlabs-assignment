@@ -1,0 +1,29 @@
+[
+    {"title":"Gas Allowance",
+        
+            "Cap_per_claim":"1000 SGD",
+            "Cap_per_year" : "200 SGD",
+            "cap_per_month": "50.00 SGD",
+            "Available_balance" : "50.00 SGD"
+    
+        }
+    ,
+    {
+       "title": "Air Fare",
+            "Cap_per_claim":"1000 SGD",
+            "Cap_per_year" : "200 SGD",
+            "cap_per_month": "50.00 SGD",
+            "Available_balance" : "50.00 SGD"
+    
+        
+    },
+    {
+        "title":"Taxi/Grab",
+            "Cap_per_claim":"1000 SGD",
+            "Cap_per_year" : "200 SGD",
+            "cap_per_month": "50.00 SGD",
+            "Available_balance" : "50.00 SGD"
+    
+        
+    }
+]

@@ -1,0 +1,23 @@
+[
+    { "title":"Hospitalization",
+        "Cap_per_claim":"1000 SGD",
+        "Cap_per_year" : "200 SGD",
+        "cap_per_month": "50.00 SGD",
+        "Available_balance" : "50.00 SGD"
+
+    },
+    {"title":"Dental",
+        "Cap_per_claim":"200 SGD",
+        "Cap_per_year" : "600 SGD",
+        "cap_per_month": "100.50 SGD",
+        "Available_balance" : "100.50 SGD"
+
+    },
+    {"title":"Insuarance",
+        "Cap_per_claim":"5000 SGD",
+        "Cap_per_year" : "5000 SGD",
+        "cap_per_month": "200 SGD",
+        "Available_balance" : "50.00 SGD"
+
+    }
+]
