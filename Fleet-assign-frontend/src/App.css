@@ -1,25 +1,17 @@
 .rectangle-1 {
 
-width: 1075px;
-height: 284px;
-left: 24px;
-top: 73px;
-background-color:#ffffff;
-margin:30px;
-
+background-color: #ffffff  !important;
+height:100px;
 
 
 }
+
 .rectangle-2{
-    height:80px;
-    background-color:#ffffff
-}
-.rectangle-3{
-    background-color:#ffffff
+    background-color:#ffffff  !important;
 }
 
 .medical ,.transport{
-    position: absolute;
+    
     width: 150px;
     height: 21px;
     left: 48px;
@@ -32,7 +24,7 @@ margin:30px;
 }
 
 .starting-blnce{
-    position: absolute;
+    
     width: 231px;
     height: 16px;
     left: 48px;
@@ -47,19 +39,27 @@ margin:30px;
 }
 
 .avail-blnce{
-    position: absolute;
+    position: relative;
     width: 212px;
     height: 21px;
-    left: 811px;
-    top: 60px;
+    float:right;
+    right:80px;
+    top:-25px;
     font-family: Droid Sans;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
     line-height: 16px;
     text-align: right;
-    color: rgba(0, 0, 0, 0.5);
+    color: rgba(0, 0, 0, 0.5) !important;
 }
+.icon{
+    position:relative;
+    top:-25px;
+    float:right;
+    right:65px
+}
+
 hr{
     margin-inline-start: 25px;
     margin-inline-end:25px;

@@ -51,74 +51,81 @@ componentDidMount(){
     return(
 
       <div >
-       <div class="container">
-          <div class="row rectangle-1">
-            <div class= "col-sm-12 col-md-12 col-lg-12">
-              <div class = "row rectangle-2">
-                <div>
-                <h3 class = "medical">🚑 Medical</h3>
+        
+        <div class="container-fluid">
+  
+          <div class="panel-group">
+            <div class="panel panel-default">
+              <div class="panel-heading rectangle-1">
+                
+                <div data-toggle="collapse" href="#collapse1">
+                  <div>
+                        <h3 class = "medical">🚑 Medical</h3>
+                        <p class = "starting-blnce">Starting balance:500.00SGD</p>
+                        </div>
+                        <span class="icon glyphicon glyphicon-chevron-up"></span>
+                        <span class= "avail-blnce" >Available balance:280.80SGD</span>
+                      </div>
+                    </div>
+                </div>
+                
+                <div id="collapse1" class="panel-collapse collapse show rectangle-2">
+                    <div class="panel-body">
+                        <table>
+                            <tr class= "title-row">
+                            <th>title</th>
+                            <th>Cap_per_claim</th>
+                            <th>Cap per year</th>
+                            <th>cap per month</th>
+                            <th>available balance</th>
+                            </tr>
+                            {medical.map(item=>{
+                          return(
+                            <tr>
+                              <td class = "item-title">{item.title}</td>
+                              <td class = "item-data">{item.Cap_per_claim}</td>
+                              <td class = "item-data">{item.Cap_per_year}</td>
+                              <td class = "item-data">{item.cap_per_month}</td>
+                              <td class = "item-data">{item.Available_balance}</td>
+                              <td><button class="delete-btn" value={medical.indexOf(item)} onClick={()=>this.delete(medical.indexOf(item))}>Delete</button></td>
+                            </tr>
+
+                          )
+                        })}
+                        </table>
+                    </div>   
+                </div>       
+              </div>            
+            </div> 
+            <div class="container-fluid">
+  
+  <div class="panel-group">
+    <div class="panel panel-default">
+      <div class="panel-heading rectangle-1">
+        
+        <div data-toggle="collapse" href="#collapse2">
+               <div>
+                
+                <h3 class = "medical">🚗 Transport</h3>
                 <p class = "starting-blnce">Starting balance:500.00SGD</p>
                 </div>
-                <span className="glyphicon glyphicon-th-list toggle-span" data-toggle="collapse"
-                                        data-target="#demo"></span>
-                <span class= "avail-blnce">Available balance:280.80SGD</span>
-              </div>
-              <hr></hr>
-             
-              <div >
-              <div id="demo" class="collapse show" class= "row rectangle-3">
-              <table>
-                <tr class= "title-row">
-                  <th>title</th>
-                  <th>Cap_per_claim</th>
-                  <th>Cap per year</th>
-                  <th>cap per month</th>
-                  <th>available balance</th>
-                </tr>
-                {medical.map(item=>{
-                  return(
-                    <tr>
-                      <td class = "item-title">{item.title}</td>
-                      <td class = "item-data">{item.Cap_per_claim}</td>
-                      <td class = "item-data">{item.Cap_per_year}</td>
-                      <td class = "item-data">{item.cap_per_month}</td>
-                      <td class = "item-data">{item.Available_balance}</td>
-                      <td><button class="delete-btn" value={medical.indexOf(item)} onClick={()=>this.delete(medical.indexOf(item))}>Delete</button></td>
-                    </tr>
-
-                  )
-                })}
-               
-               
-                
-              </table>
-              </div>
+                <span class="icon glyphicon glyphicon-chevron-up"></span>
+                <span class= "avail-blnce" >Available balance:280.80SGD</span>
               </div>
             </div>
-
-          </div>
-          <div class= "row rectangle-1">
-          <div class= "col-sm-12 col-md-12 col-lg-12">
-              <div class = "row rectangle-2">
-              <div>
-                <h3 class = "transport">🚗 Transport</h3>
-                <p class = "starting-blnce">Starting balance:500.00SGD</p>
-                </div>
-                <span className="glyphicon glyphicon-th-list toggle-span" data-toggle="collapse"
-                                        data-target="#demo2"></span>
-                <span class= "avail-blnce">Available balance:280.80 SGD</span>
-              </div>
-              <hr></hr>
-              <div id= "demo2" class= "row rectangle-3 collapse show">
-              <table>
-              <tr class= "title-row">
-                  <th>title</th>
-                  <th>cap per claim</th>
-                  <th>cap per year</th>
-                  <th>cap per month</th>
-                  <th>available balance</th>
-                </tr> 
-                {transport.map(item=>{
+      </div>
+        
+        <div id="collapse2" class="panel-collapse collapse show rectangle-2">
+            <div class="panel-body">
+                <table>
+                    <tr class= "title-row">
+                    <th>title</th>
+                    <th>Cap_per_claim</th>
+                    <th>Cap per year</th>
+                    <th>cap per month</th>
+                    <th>available balance</th>
+                    </tr>
+                    {transport.map(item=>{
                   return(
                     <tr>
                       <td class="item-title">{item.title}</td>
@@ -131,20 +138,34 @@ componentDidMount(){
 
                   )
                 })}
-               
-                
-              </table> 
-                
-              </div>
-          </div>
+                </table>
+            </div>   
+        </div>       
+    </div>            
+</div>     
+
+            
+        
+        
+        
 
           </div>
-        </div>
+               
+        
+
+          
+             
+
+         
+               
+             
+                
+             
            
             
        
             
-      </div>
+     
 
     )
   }
